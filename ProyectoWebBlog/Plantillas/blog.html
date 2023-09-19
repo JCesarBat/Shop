@@ -1,0 +1,40 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Blog	 {% endblock %}
+
+{% block content %}
+		<div	class='articulos'>
+			
+			{% for i in blog %}
+
+				<img	class='imagene' src="{{i.imagen.url}}"	width="200" height="200">
+				<p class='mostrando_servicios'>
+					{{i.titulo}}/{{i.contenido}}
+				</p>
+
+				<p class='flotar'>
+						{{i.autor.username}}
+				</p>
+
+
+
+			{% endfor %}
+			<div>categorias:
+			{% for i in blog %}
+
+				{% for j in i.relacion.all %}
+				<a href="{% url 'categoria' j.id %}">{{j.categoria}}</a>
+				{% endfor %}
+
+			{% endfor %}
+			</div>
+
+
+		</div>	
+
+
+	      
+
+	{% endblock %}	
+
+

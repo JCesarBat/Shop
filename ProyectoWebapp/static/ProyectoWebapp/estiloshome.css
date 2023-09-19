@@ -1,0 +1,132 @@
+*{margin: 0px;
+	padding: 0px}
+
+
+
+.cabeza{text-align: left;
+		color: white;
+		font-size: 50px;
+		font-family: sans-serif;
+        background: red;
+
+        
+        height: 80px;
+    	
+    	padding-top: 20px;
+    	}
+.navegacionC a{
+	color: white;
+}
+.navegacionC{
+
+			background-color: yellowgreen;
+			height: 50px;
+			border-top-style:solid ;
+			border-bottom-style:solid ;
+
+			font-size: 25px;
+			font-family: cursive;
+			}
+
+.navegacion{float: left;
+			 margin: auto auto auto 50px;
+			text-shadow:hsl(0, 0%, 0%)  5px 5px 20px;
+			
+			
+			
+
+
+			}
+.navegacionP{
+			float: left;
+			background-color: white;	
+			
+			text-shadow:hsl(0, 30%, 0%)  5px 5px 20px;
+			border-radius: 20px;
+			 box-shadow: hsl(50%, 0%, 0%)  5px 5px 20px;
+			 margin: auto auto auto 50px;
+
+
+	
+ 	
+}
+.navegacion:hover{
+	background-color: yellowgreen;
+	border-radius: 20px;
+	transition-duration: 0.5s;
+	          transition-property: all;
+	          box-shadow: hsl(0, 0%, 30%)  5px 5px 20px;
+	          
+}
+.articulos{	
+			background-color: white;
+			text-align: center;}
+
+.flotar{
+	
+	border: solid;
+	width: 10%;
+	
+	border-radius: 20px;
+	margin: auto;
+
+	}
+
+
+
+.mostrando_servicios{
+	font-family: sans-serif;
+}
+.imagene{
+	border-radius: 20px;
+	border-style: solid;
+}
+
+#formulario{
+	text-align: center;
+	color: gray;
+	width: 35%;
+	margin: 10px auto;
+	background: yellowgreen;
+
+
+}
+#formulario_R{
+	border-style: solid;
+	
+	width: 30%;
+	margin: 5%;
+}
+#formulario_L{
+	border-style: solid;
+	margin: 5%;
+	width: 30%;
+	
+}
+.articulosT{
+	float: left;
+	padding:5px ;
+	margin: 10px;
+	border-style: solid;
+	border-radius: 10px;
+
+}
+
+.contenedor{
+	text-align: center;
+	padding: 5px 5px;
+}
+#clearfloat{clear:both;}
+
+footer{background: yellowgreen;
+		border-top-style:solid ;
+		border-bottom-style:solid ;
+
+		height: 60px}
+
+.Muestra{border-style: solid;}
+.th{padding: 5px;
+	border-style: solid;
+	
+		
+		}

@@ -1,0 +1,23 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Contacto	 {% endblock %}
+
+{% block content %}
+{% if mensaje %}
+			{% for i in mensaje %}
+			{{i}}
+			
+			{% endfor %}
+
+		{% endif %}
+	<form id="formulario_L" action="{% url 'logear' %}" method="POST" >{%csrf_token %}
+
+
+		{{form}}
+		<button>Logear</button>
+	</form>
+
+
+
+
+{% endblock %}	

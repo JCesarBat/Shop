@@ -1,0 +1,15 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Contacto	 {% endblock %}
+
+{% block content %}
+
+	<form id="formulario_R" action="{% url 'Registro' %}" method="POST" >{%csrf_token %}
+		{{form}}
+		<button>registrate</button>
+	</form>
+
+
+
+
+{% endblock %}	

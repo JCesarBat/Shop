@@ -1,0 +1,21 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Servicios	 {% endblock %}
+
+{% block content %}
+		
+	<div	class='articulos'>
+		{% for i in servicios %}
+			<h1 class='mostrando_servicios'>{{i.titulo}}</h1>
+			<p class='mostrando_servicios'>
+				{{i.contenido}}
+				
+			</p>
+			<img class='imagene' src="{{i.imagen.url}}" width="365" height="274">
+
+
+		{% endfor %}
+	</div> 
+	
+
+	{% endblock %}	

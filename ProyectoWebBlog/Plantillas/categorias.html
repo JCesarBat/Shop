@@ -1,0 +1,43 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Categoria	 {% endblock %}
+
+{% block content %}
+		<div	class='articulos'>
+			
+			{% for i in post %}
+
+				<img	class='imagene' src="{{i.imagen.url}}"	width="200" height="200">
+				<p class='mostrando_servicios'>
+					{{i.titulo}}/{{i.contenido}}
+				</p>
+
+				<p class='flotar'>
+					este pos esta creado por {{i.autor.username}}
+				</p>
+
+
+
+			{% endfor %}
+
+
+		<div>categoria:
+			{% for i in post %}	
+				{% for j in i.relacion.all %}		
+					{{j.categoria}}
+
+
+				
+				{% endfor %}
+			{% endfor %}
+		</div>
+
+
+		</div>
+
+
+	      
+
+	{% endblock %}	
+
+

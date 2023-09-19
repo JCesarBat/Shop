@@ -1,0 +1,26 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Contacto	 {% endblock %}
+
+{% block content %}
+
+	<form action="{% url 'Contacto' %}" method="POST" >{%csrf_token %}
+		
+		<div	
+		id="formulario"	><table >
+			<p style="font-size: 30px">	{% if 'valido' in request.GET %}
+				Se envio correctamente el formulario
+				{% endif %}
+			</p>
+			{{formulario.as_table}}
+
+		</table>
+
+		<input type="submit" name=""  style="width:150px">
+		</div>
+	</form>
+
+
+
+
+{% endblock %}	

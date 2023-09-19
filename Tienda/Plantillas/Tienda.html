@@ -1,0 +1,42 @@
+{%	extends	"plantillas_genericas/padre.html" %}
+
+{% block title %}	Tienda	 {% endblock %}
+
+{% block content %}
+	<div	class='articulos'>
+		
+		<div class="carritp" style="float:right;">
+			
+			{% include "Tienda/Plantillas/wuidget.html" %}
+			
+		</div>
+
+
+		<div class="contenedor">
+
+		
+		{% for i in Producto %}
+
+
+				<div class="articulosT">
+					<img  src="{{i.imagen.url}}" width="350" height="350">
+
+					<p>{{i.nombre}}	precio:{{i.precio}} </p> 
+
+					<a href='{% url "agregar" i.id %}'>agregar</a> 
+				</div>
+		{% endfor %}
+		
+		<div id="clearfloat"></div>
+			</div>
+
+
+	</div>
+
+
+{% if 'no_se_encuentra' in request.GET %}
+			<script type="text/javascript">
+				alert(' Este elemento no esta disponible')
+			</script>
+			{% endif %}
+{% endblock %}	
